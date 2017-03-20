@@ -1,0 +1,6 @@
+/*
+ Quantcast measurement tag
+ Copyright (c) 2008-2017, Quantcast Corp.
+*/
+(function(d,k,h){try{__qc("defaults",d,{labels:"_fp.event.Default"})}catch(m){}var l=function(a,b,c){return a?"nc"===a?!b||!c||0>b.indexOf(c):"eq"===a?b===c:"sw"===a?0===b.indexOf(c):"ew"===a?(a=b.length-c.length,b=b.lastIndexOf(c,a),-1!==b&&b===a):"c"===a?0<=b.indexOf(c):!1:!1},f=function(a,b,c){var e;if(k.top===k.self)e=h.location.href;else{e=h.referrer;var d=h.createElement("a");d.href=e;e=d.href}l(b,e,c)?a(e):a(!1)},g=function(a){return"array"==={}.toString.call(a).match(/\s([a-zA-Z]+)/)[1].toLowerCase()?
+{labels:a.join(",")}:{labels:""+a}};__qc("rules",[d,null,[[g,"_fp.event.Homepage"]],[[f,"eq","http://www.consumerfinance.gov/"]]],[d,null,[[g,"_fp.event.You Have The Right Page"]],[[f,"sw","http://www.consumerfinance.gov/you-have-the-right/"]]],[d,null,[[g,"_fp.event.Spanish Homepage"]],[[f,"eq","http://www.consumerfinance.gov/es/"]]],[d,null,[[g,"_fp.channel.ES"]],[[f,"c","/es/"]]])})("p-g7auj9L5VxyST",window,document);
